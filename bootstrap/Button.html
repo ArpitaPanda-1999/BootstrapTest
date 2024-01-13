@@ -8,7 +8,8 @@
     <script src="js/bootstrap.bundle.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-5">
+        <!----------------------normal button with color------------------------>
         <button type="button" class="btn btn-primary">Primary</button>
         <button type="button" class="btn btn-secondary">Secondary</button>
         <button type="button" class="btn btn-light">Light</button>
@@ -18,10 +19,91 @@
         <button type="button" class="btn btn-info">Info</button>
         <button type="button" class="btn btn-danger">Danger</button>
         <button type="button" class="btn btn-link">Link</button>
+        <br><br>
 
+        <!----------------------Type of button------------------------>
         <a href="#" class="btn btn-primary" role="button">Link</a>
         <button class="btn btn-primary" type="submit">Button</button>
         <input type="button" value="Input" class="btn btn-primary">
+        <input type="submit" value="Submit" class="btn btn-primary">
+        <input type="reset" value="Reset" class="btn btn-primary">
+        <br><br>
+
+        <!----------------------outline boarder and hover------------------------>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <br><br>
+
+        <!----------------------large button------------------------>
+        <button type="button" class="btn btn-primary btn-lg">large button</button>
+        <button type="button" class="btn btn-secondary btn-lg">large button</button>
+        <br><br>
+
+        <!----------------------Small button------------------------>
+        <button type="button" class="btn btn-primary btn-sm">Small Button</button>
+        <button type="button" class="btn btn-secondary btn-sm">Small Button</button>
+        <br><br>
+
+        <!----------------------disable attribute------------------------>
+        <button type="button" class="btn btn-primary" disabled>Primary Button</button>
+        <button type="button" class="btn btn-secondary" disabled>Button</button>
+        <button type="button" class="btn btn-outline-primary" disabled>Primary Button</button>
+        <button type="button" class="btn btn-outline-secondary" disabled>Button</button>
+        <br><br>
+        
+        <!----------------------disable class------------------------>
+        <a class="btn btn-primary disabled" role="button" aria-disabled="true">Primary Link</a>
+        <a class="btn btn-secondary disabled" role="button" aria-disabled="true">Link</a>
+        <br><br>
+
+        <!----------------------full size button------------------------>
+        <div class=" d-grid gap-2">
+            <a class="btn btn-primary" type="button">Button</a>
+            <a class="btn btn-primary" type="button">Button1</a>
+        </div>
+        <br><br>
+
+        <!----------------------small size button------------------------>
+        <div class="d-grid gap-2 d-md-block">
+            <a class="btn btn-primary" type="button">button</a>
+            <a class="btn btn-primary" type="button">button1</a>
+        </div>
+        <br><br>
+  
+        <!----------------------middle size button------------------------>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a class="btn btn-primary" type="button">button</a>
+            <a class="btn btn-primary" type="button">button1</a>
+        </div>
+        <br><br>
+
+        <!----------------------- left side button----------------------->
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a class="btn btn-primary" type="button">button</a>
+            <a class="btn btn-primary" type="button">button1</a>
+        </div>
+        <br><br>
+
+        <!-----------------------Toggle button----------------------->
+        <p class="d-inline-flex gap-1">
+            <button type="button" class="btn" data-bs-toggle="button">Toggle Button</button>
+            <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle Button</button>
+            <button type="button" class="btn" data-bs-toggle="button" disabled>Disabled toggle Button</button>
+        </p>
+        <br><br>
+
+        <!-----------------------Toggle button----------------------->
+        <p class="d-inline-flex gap-1">
+            <a class="btn btn-primary" role="button" data-bs-toggle="button">Toggle Link</a>
+            <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+            <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+        </p>
     </div>
 </body>
-</html>
+</html>c
