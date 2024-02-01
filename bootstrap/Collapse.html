@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <p class="d-inline-flex gap-1">
+            <a href="#collapse1" class="btn btn-primary" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse1">
+                link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse">
+                button with data-bs-target
+            </button>
+        </p>
+        <div class="collapse" id="collapse1">
+            <div class="card card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores exercitationem veniam quisquam repudiandae atque voluptatum ex, reprehenderit facere voluptates. Fuga!
+            </div>
+        </div>
+
+
+        <p>
+            <button class="btn btn-primary mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                toggle width collapse
+            </button>
+        </p>
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapse2">
+                <div class="card card-body" style="width: 500px;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, deleniti. Perferendis error quod quae id totam officiis at rerum optio?
+                </div>
+            </div>
+        </div>
+
+
+        <p class="d-inline-flex gap-1">
+            <a href="#collapse3" class="btn btn-primary" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse3">
+                First
+            </a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                Second
+            </button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="collapse3 collapse4">
+                Third
+            </button>
+        </p> 
+        <div class="row">
+            <div class="col">
+                <div class="collapse multi-collapse" id="collapse3">
+                    <div class="card card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sint perferendis at aperiam in sapiente voluptate repellendus tempora sequi ad.
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse multi-collapse" id="collapse4">
+                    <div class="card card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aliquam. Velit, doloribus iure laboriosam perspiciatis expedita asperiores harum et officiis!
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
